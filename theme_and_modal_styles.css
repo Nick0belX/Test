@@ -1,0 +1,84 @@
+/* Кнопка теми */
+.theme-toggle {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 100;
+  padding: 8px 12px;
+  background: #0056b3;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.theme-toggle:hover {
+  background: #003f7f;
+}
+
+/* Темна тема */
+body.dark-mode {
+  background-color: #111;
+  color: #eee;
+}
+body.dark-mode .resume-container {
+  background-color: #1e1e1e;
+  color: #eee;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+}
+body.dark-mode .skills li {
+  background: #333;
+  color: #fff;
+}
+
+/* Коментарі */
+.comments {
+  margin-top: 30px;
+}
+.comment {
+  margin-bottom: 20px;
+  padding: 10px;
+  background: #f0f0f0;
+  border-left: 4px solid #007BFF;
+}
+body.dark-mode .comment {
+  background: #2a2a2a;
+  border-left-color: #66b2ff;
+}
+
+/* Модальне вікно */
+.modal-form {
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  width: 100%;
+}
+.modal-form label {
+  display: block;
+  margin: 10px 0 5px;
+}
+.modal-form input,
+.modal-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.modal-form button {
+  background-color: #0056b3;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.modal-form button:hover {
+  background-color: #003f7f;
+}
